@@ -1,0 +1,66 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	function getArrey (n){
+		var a = [];
+	for(var i=1; i<=n; i++){
+		a.push(i);
+	}
+	return a ;
+	}
+	function getSum (arr){
+
+		var s = 0;
+		for(var i = 0; i < arr.length; i++){
+			s = s + arr[i];
+		}
+		return (s) ;
+	}
+
+	function getMax(add) {
+		var n = add[0];
+		for(var i=1; i < add.length ; i++){
+			if (n < add[i]){ 
+				n = add[i];
+				}
+		
+		
+			}
+		return (n);
+	}
+	function getMin(add) {
+		var n = add[0];
+		for(var i=1; i < add.length ; i++){
+			if (n > add[i]){ 
+				n = add[i];
+				}
+		
+		
+			}
+		return (n);
+	}
+
+	function getdel(ffa) {
+		var n = [];
+		for( var i=0; i<ffa.length; i++){
+			if (ffa[i]% 2 == 0) 
+				n.push(ffa[i]);
+			
+			
+		}
+		return(n);	
+	}	
+
+
+
+
+	////////////////////////////////
+	alert(getArrey (5));
+var ar = getArrey (5);
+var add= [5, 10, 3, 42,55]
+	
+	alert(getSum(ar));
+	alert(getMax(add));
+	alert(getMin(add));
+	alert(getdel(add));
+
+</script>
